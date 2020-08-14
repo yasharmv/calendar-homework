@@ -1,0 +1,76 @@
+body {
+  background-color: #33FFBD;
+}
+
+.calendar {
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: white;
+  max-width: 400px;
+  height: 400px;
+  padding: 10px 15px 10px 15px;
+}
+
+.calendar .selectedDate {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.calendar .currentDate {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calendar .currentDate i {
+  cursor: pointer;
+  font-size: 25px;
+  opacity: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.calendar .currentDate i:hover {
+  background-color: #33FFBD;
+}
+
+.calendar .week {
+  text-align: center;
+}
+
+.calendar .week span {
+  padding: 15px;
+}
+
+.calendar .days {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar .days .day {
+  text-align: center;
+  line-height: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.calendar .days .day:active {
+  background-color: #33FFBD;
+}
+/*# sourceMappingURL=style.css.map */
